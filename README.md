@@ -1,0 +1,1 @@
+# Movidius NCSDK container image
