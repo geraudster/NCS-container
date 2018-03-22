@@ -10,6 +10,6 @@ RUN apt update && \
     cd ~ && \
     rm -rf ~/workspace/ncsdk && \
     rm -rf /opt/movidius && \
-    apt remove *-dev && \
+    apt -y remove *-dev && \
     rm -rf /var/lib/apt/lists/*
 
