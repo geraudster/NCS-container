@@ -12,6 +12,5 @@ cd ~/workspace/ncsdk-2.05.00.02 && \
 make install && \
 cd ~ && \
 rm -rf ~/workspace/ncsdk* && \
-rm -rf /opt/movidius && \
 apt -y remove *-dev && \
 rm -rf /var/lib/apt/lists/*

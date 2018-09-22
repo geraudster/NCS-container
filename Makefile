@@ -7,4 +7,4 @@ build:
 	docker build -t $(IMAGE_NAME) .
 
 run:
-	docker run --rm -it $(IMAGE_NAME) -n $(CONTAINER_NAME) bash
+	docker run --rm --name $(CONTAINER_NAME) -it $(IMAGE_NAME) bash
