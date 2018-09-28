@@ -14,3 +14,5 @@ cd ~ && \
 rm -rf ~/workspace/ncsdk* && \
 apt -y remove *-dev && \
 rm -rf /var/lib/apt/lists/*
+
+ENV PYTHONPATH :/opt/movidius/caffe/python
