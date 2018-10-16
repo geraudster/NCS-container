@@ -4,7 +4,7 @@ CONTAINER_NAME ?= ncs
 .PHONY: build
 
 build:
-	docker build -t $(IMAGE_NAME) .
+	docker build --network=host -t $(IMAGE_NAME) .
 
 run:
 	docker run --rm --name $(CONTAINER_NAME) -it $(IMAGE_NAME) bash
