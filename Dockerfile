@@ -5,7 +5,7 @@ FROM ubuntu:16.04
 RUN apt-get -qq update && \
 apt-get -qq --no-install-recommends install git build-essential sudo wget lsb-release udev ca-certificates curl && \
 cd /tmp && \
-curl https://codeload.github.com/movidius/ncsdk/tar.gz/v2.08.01.02 | tar xzf - && \
+git clone https://github.com/movidius/ncsdk.git && \
 cd /tmp/ncsdk* && \
 make install && \
 cd ~ && \
