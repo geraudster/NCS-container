@@ -8,3 +8,6 @@ build:
 
 run:
 	docker run --rm --name $(CONTAINER_NAME) -it $(IMAGE_NAME) bash
+
+tfversion:
+	docker run --rm --name $(CONTAINER_NAME) -it $(IMAGE_NAME) python3 -c 'import tensorflow as tf; print(tf.__version__)'
